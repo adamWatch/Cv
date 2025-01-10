@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(199, 186, 182);
+  background: linear-gradient(180deg, rgba(199, 186, 182, 1) 15%, rgba(177, 171, 170, 1) 60%, rgba(124, 112, 173, 0.9780287114845938) 93%);
+  min-height: 100vh;
+}
+
+.baner {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.infoWImg__container {
+  display: flex;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.second__baner {
+  padding: 1.5rem;
+}
+
+.exp__year {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+.exp__item,
+.edu__item {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
