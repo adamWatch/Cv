@@ -12,6 +12,7 @@ function App() {
     photo:string;
     name:string;
     lastName:string;
+    position:string;
     experience: Experience[];
     education: string[];
   }
@@ -20,6 +21,7 @@ function App() {
     photo: "../public/avatar.jpg",
     name: 'Adam',
     lastName: 'Zegarek',
+    position: 'Geodeta',
     experience: [{
       year: 2017,
       description:'Wyjazd zarobkowy do Holandi'
@@ -39,16 +41,19 @@ function App() {
   return (
     <>
      <div className='container'>
-      <h1>CV</h1>
-      <div className='img__container'>
+      <h1 className='baner'>CV</h1>
+      <div className='infoWImg__container'>
+       <div className='img__container'>
         <img src={cvData.photo} alt="" />
+       </div>
+       <div className='info__container'>
+        <span>Imię: <strong>{cvData.name}</strong></span>
+        <span>Nazwisko: <strong>{cvData.lastName}</strong></span>
+        <span>Stanowisko: <strong>{cvData.position}</strong></span>
+       </div>
       </div>
-      <div className='info__container'>
-        Imię: {cvData.name}
-        Nazwisko: {cvData.lastName}
-      </div>
-      <ul className='exp__list'>
-        <h2>Doświadczenie zawodowe</h2>
+      <ul className='list'>
+        <h2 className='second__baner'>Doświadczenie zawodowe:</h2>
         {cvData.experience.map((exp)=>{
           
           return <li className='exp__item'> 
@@ -56,8 +61,8 @@ function App() {
           </li>
         })}
       </ul>
-      <ul className='edu__list'>
-        <h2>Doświadczenie zawodowe</h2>
+      <ul className='list'>
+        <h2 className='second__baner'>Edukacja:</h2>
         {cvData.education.map((edu)=>{
           
           return <li className='edu__item'> 
