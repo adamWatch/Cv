@@ -2,7 +2,20 @@
 import './App.css'
 
 function App() {
+
+  interface Experience{
+    year: number;
+    description:string; 
+  }
   
+  interface CvData{
+    photo:string;
+    name:string;
+    lastName:string;
+    experience: Experience[];
+    education: string[];
+  }
+
 
   return (
     <>
